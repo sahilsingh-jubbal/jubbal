@@ -1,15 +1,55 @@
 <html>
 <head>
+
 <style type="text/css">
-	div{
+	body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+
+
+
+
+
+/*.box input[type = "text"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus{
+  width: 50px;
+  border-color: #2ecc71;
+}
+
+*/
+
+.box{
+  width: 50%;
+  height: 1200px;
+  background-color: black;
+
+}
+/*	div{
 		background-color:magenta; 
 		height: 1200px;
 		width:50%;
 
-	}
+	}*/
+
 
 	#result{
-		background-color:blue; 
+		background-color:saddlebrown; 
 		text-align: center;
 		height: 100px;
 		width:100%;
@@ -18,7 +58,7 @@
 
 
 	.button {
-  background-color: #4CAF50; /* Green */
+ /* background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 16px 32px;
@@ -28,7 +68,23 @@
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
+  cursor: pointer;*/
+
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
   cursor: pointer;
+
+
+
 }
 
 .button1 {
@@ -41,6 +97,36 @@
   background-color: #4CAF50;
   color: white;
 }
+
+
+
+input { font-size: 18px; }
+
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 2px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 5px solid rgba(81, 203, 238, 1);
+}
+
+/*input[type=text]:focus {
+  background-color: lightblue;
+}*/
+
+
+
 
 </style>	
 </head>
@@ -631,25 +717,25 @@
 <h2 id="demo2">
 <center>
 
-<div>	
-
+<div class=box>	
+<br><br>
 <form name="myform">
 <br><br>
-<h2><font color="white"><b><i>Theory Subjects:</font></i></h2></b><br>
-<b><font color="black">
+<h2><font color="yellow"><b><i>Theory Subjects:</font></i></h2></b><br>
+<b><font color="white">
 TOC <input type="text" name="1st" id="text1" required="required"/><br><br>
 MATH 4 <input type="text"  name="2nd" id="text2" required="required"/><br><br>
-Software Enginnering <input type="text" name="3rd" id="text3" required="required"/><br><br>
-Opearating System <input type="text"  name="4th" id="text4" required="required"/><br><br>
+SOFTWARE ENGINEERING <input type="text" name="3rd" id="text3" required="required"/><br><br>
+OPERATING SYSTEM <input type="text"  name="4th" id="text4" required="required"/><br><br>
 DBMS <input type="text" name="5th" id="text5" required="required"/><br><br>
 </b></font>
-<b><font color="black">
-<h2><font color=white><b><i>Practical subject:</i></b></h2></font>
+<b><font color="white">
+<h2><font color=lime><b><i>Practical subject:</i></b></h2></font>
 DBMS <input type="text" name="7th" id="text7" required="required"/><br><br>
-Opearating system <input type="text"  name="8th" id="text8" required="required"/><br><br>
-Software enginnering <input type="text" name="9th" id="text9" required="required"/><br><br>
+OPERATING SYSTEM <input type="text"  name="8th" id="text8" required="required"/><br><br>
+SOFTWARE ENGINEERING <input type="text" name="9th" id="text9" required="required"/><br><br>
 CL-3 <input type="text"  name="6th" id="text6" required="required"/><br><br>
-Seminar-1 <input type="text"  name="10th" id="text10" required="required"/><br><br>
+SEMINAR-1 <input type="text"  name="10th" id="text10" required="required"/><br><br>
 </b></font>
 
 <br>
