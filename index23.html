@@ -14,6 +14,8 @@
 
 
 
+
+
 /*.box input[type = "text"]{
   border:0;
   background: none;
@@ -37,7 +39,6 @@
 
 .box{
   width: 50%;
-  height: 1200px;
   background-color: black;
 
 }
@@ -132,23 +133,26 @@ input[type=text]:focus, textarea:focus {
 
 @media only screen and (max-width: 699px){
 
-
-.box{
-  width: 280px;
-  height: 1700px;
-  background-color: black;
+body{
+	background-color: black;
 
 }
 
+.box{
+  width: 100%;
+  
+
+
+}
 
 
 h2{
-	font-size: 15px;
+	font-size: 12px;
 }
 
 input[type='text']{
-	height: 25px;
-	width:70px;
+	height: 17px;
+	width: 80px;
 
 }
 
@@ -162,7 +166,7 @@ input[type='button']{
 }
 
 
-input { font-size: 15px; }
+input { font-size: 13px; }
 
 input[type=text], textarea {
   padding:2px 0px 3px 3px;
@@ -181,17 +185,31 @@ input[type=text]:focus, textarea:focus {
 
 
 #result{
-		background-color:saddlebrown; 
+		background-color: #34495e; 
 		
 		text-align: center;
 		height: 60px;
 		width:100%;
-		padding: 10px;	
-		padding-bottom: 2px;
+		padding: 0px;	
 		font-size: 18px;	
 		font-weight: bold;
 
 	}
+
+
+.divinner{
+	
+float: left;
+  width: 50%;
+  padding: 2px;
+ 
+}
+
+.goheading{
+	font-weight: bold;
+	font-size: 20px;
+}
+
 
 
 
@@ -773,7 +791,7 @@ input[type=text]:focus, textarea:focus {
 
 		
 
-		document.getElementById("demo").innerHTML="<br><div id='result'><br><font color='white'>Your SGPA="+result+"</br></font></div>";
+		document.getElementById("demo").innerHTML="<br><div id='result'><br><font color='white'>Your SGPA="+result+"<br><br></font></div>";
 		//window.alert(g);
 
 	}
@@ -799,31 +817,52 @@ input[type=text]:focus, textarea:focus {
 <center>
 
 <div class=box>	
-<br><br>
+
 <form name="myform">
 <br><br>
-<h2><font color="yellow"><b><i>Theory Subjects:</font></i></h2></b><br>
+
+<div class="divinner">
+
+<h2 class="goheading"><font color="yellow"><b><i>Theory Subjects:</font></i></h2></b><br>
 <b><font color="white">
-TOC <input type="text" name="1st" id="text1" required="required"/><br><br>
-MATH 4 <input type="text"  name="2nd" id="text2" required="required"/><br><br>
-SOFTWARE ENGINEERING <input type="text" name="3rd" id="text3" required="required"/><br><br>
-OPERATING SYSTEM <input type="text"  name="4th" id="text4" required="required"/><br><br>
+TOC  <input type="text" name="1st" id="text1" required="required"/><br><br>
+M4   <input type="text"  name="2nd" id="text2" required="required"/><br><br>
+SE   <input type="text" name="3rd" id="text3" required="required"/><br><br>
+OS   <input type="text"  name="4th" id="text4" required="required"/><br><br>
 DBMS <input type="text" name="5th" id="text5" required="required"/><br><br>
 </b></font>
+
+</div>
+
+
+<!-- <div class="divinner">
 <b><font color="white">
 <h2><font color=lime><b><i>Practical subject:</i></b></h2></font>
 DBMS <input type="text" name="7th" id="text7" required="required"/><br><br>
-OPERATING SYSTEM <input type="text"  name="8th" id="text8" required="required"/><br><br>
-SOFTWARE ENGINEERING <input type="text" name="9th" id="text9" required="required"/><br><br>
+OS <input type="text"  name="8th" id="text8" required="required"/><br><br>
+SE <input type="text" name="9th" id="text9" required="required"/><br><br>
 CL-3 <input type="text"  name="6th" id="text6" required="required"/><br><br>
-SEMINAR-1 <input type="text"  name="10th" id="text10" required="required"/><br><br>
+SEM-1 <input type="text"  name="10th" id="text10" required="required"/><br><br>
+</b></font>
+</div>
+<br>
+ -->
+
+<b><font color="white">
+<h2 class="goheading"><font color=lime><b><i>Practical subject:</i></b></h2></font><br>
+DBMS  <input type="text" name="7th" id="text7" required="required"/><br><br>
+OS    <input type="text"  name="8th" id="text8" required="required"/><br><br>
+SE    <input type="text" name="9th" id="text9" required="required"/><br><br>
+CL-3  <input type="text"  name="6th" id="text6" required="required"/><br><br>
+SEM-1 <input type="text"  name="10th" id="text10" required="required"/><br><br>
 </b></font>
 
-<br>
 
+	<br>
 <input type="button" class="button button1" value="CALCULATE" onclick="my5()"/><br><br>
 <!-- <input type="button" value="Validate" onclick="validate()"/>
  -->
+
 </form>
 </center>
 
